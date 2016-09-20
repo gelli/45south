@@ -1,0 +1,33 @@
+
+@import "settings";
+$slick-dot-size: 10px;
+
+@import "~foundation-sites/scss/foundation";
+
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+@include foundation-everything;
+
+
+.container {
+  /* @include grid-row; */
+}
+
+#slick {
+  img {
+    height: 590px;
+  }
+}
+
+.slick-prev {
+    left: 50px;
+    z-index: 1;
+}
+.slick-next {
+    right: 50px;
+}
+
+.slick-slide {
+    outline: none
+}

@@ -1,0 +1,26 @@
+{
+  "name": "45south",
+  "version": "0.0.0",
+  "dependencies": {
+    "foundation-sites": {
+      "version": "6.2.3",
+      "from": "foundation-sites@>=6.2.3 <7.0.0",
+      "resolved": "https://registry.npmjs.org/foundation-sites/-/foundation-sites-6.2.3.tgz"
+    },
+    "jquery": {
+      "version": "2.2.4",
+      "from": "jquery@>=2.2.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-2.2.4.tgz"
+    },
+    "slick-carousel": {
+      "version": "1.6.0",
+      "from": "slick-carousel@latest",
+      "resolved": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.6.0.tgz"
+    },
+    "what-input": {
+      "version": "2.1.1",
+      "from": "what-input@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/what-input/-/what-input-2.1.1.tgz"
+    }
+  }
+}
