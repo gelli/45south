@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Little Blue Bag 2017",
   "scripts": {
-    "clean": "rm -rf assets/",
+    "clean": "rm -rf dist/assets/",
     "start": "webpack-dev-server --open",
     "build": "webpack -d --progress --colors",
     "prestart": "npm run build",

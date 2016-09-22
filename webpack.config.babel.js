@@ -7,7 +7,7 @@ const config = {
     main: ['./src/js/main.js', './src/css/main.scss'],
   },
   output: {
-    path: path.resolve('assets'),
+    path: path.resolve('dist/assets/scripts'),
     publicPath: '/assets/',
     filename: 'main.js',
   },
@@ -31,7 +31,7 @@ const config = {
       },
       {
         test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$|\.eot$/,
-        loader: "url-loader?limit=8192&name=name=./images/[hash].[ext]"
+        loader: "url-loader?limit=8192&name=images/[hash].[ext]"
       },
     ],
   },
@@ -39,13 +39,17 @@ const config = {
     modulesDirectories: ['./bower_components', './node_modules'],
   },
   plugins: [
-    new ExtractTextPlugin('[name].css'),
+    new ExtractTextPlugin('../css/[name].css'),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
       }
     }),
   ],
+  devServer: {
+    contentBase: "./dist",
+    hot: true
+  },
 };
 
 if (process.env.NODE_ENV === 'production') {

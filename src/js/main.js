@@ -23,3 +23,29 @@ $(document).ready(function() {
 /* document.getElementById('app').appendChild(
     document.createTextNode(greeter(WHO))
 );*/
+
+
+
+var last_known_scroll_position = 0;
+var ticking = false;
+
+function doSomething(scroll_pos) {
+  if (scroll_pos > 10) {
+    document.getElementById('navigation-bar').classList.add("visible")
+    document.getElementById('navigation-bar').classList.remove("invisible")
+  } else {
+    document.getElementById('navigation-bar').classList.remove("visible")
+    document.getElementById('navigation-bar').classList.add("invisible")
+  }
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      ticking = false;
+    });
+  }
+  ticking = true;
+});
