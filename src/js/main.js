@@ -14,7 +14,7 @@ $(document).ready(function() {
   $("#slick").slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    /* speed: 300, */
     centerMode: true,
     variableWidth: true
   });
