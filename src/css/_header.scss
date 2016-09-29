@@ -9,6 +9,7 @@
   background-size: cover;
   background-image: url(images/header.jpg);
   overflow: hidden;
+  color: white;
 
   .main-header-content {
     display: table-cell;
@@ -17,9 +18,20 @@
 }
 
 .page-title {
-    color: white;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: bold;
+  font-family: "Rock Salt";
+  font-size: 4rem;
+}
+
+.page-description {
+  margin-top: 25px;
+  font-family: "Rock Salt";
+  font-size: 1.2rem;
+
+  @media #{$medium-up} {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .bloglogo {
