@@ -4,9 +4,8 @@
   "description": "Little Blue Bag 2017",
   "scripts": {
     "clean": "rm -rf dist/assets/",
-    "start": "webpack-dev-server --open --progress --inline",
+    "start": "webpack-dev-server -d --open --progress --colors --inline",
     "build": "webpack -d --progress --colors",
-    "prestart": "npm run build",
     "prod": "NODE_ENV=production webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -45,6 +44,7 @@
   },
   "dependencies": {
     "foundation-sites": "^6.2.3",
+    "genericons": "^1.0.1",
     "slick-carousel": "^1.6.0"
   }
 }

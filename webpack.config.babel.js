@@ -7,7 +7,7 @@ const config = {
     main: ['./src/js/main.js', './src/css/main.scss'],
   },
   output: {
-    path: path.resolve('dist/assets/scripts'),
+    path: path.resolve('dist/assets/'),
     publicPath: '/assets/',
     filename: 'main.js',
   },
@@ -23,7 +23,7 @@ const config = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass!resolve-url!sass?sourceMap'),
+        loader: ExtractTextPlugin.extract('style', 'css?sourceMap!resolve-url!sass?sourceMap'),
       },
       {
         test: /lightslider\/.+\.(jsx|js)$/,
@@ -31,7 +31,7 @@ const config = {
       },
       {
         test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$|\.eot$/,
-        loader: "url-loader?limit=8192&name=images/[hash].[ext]"
+        loader: "url-loader?limit=8192&name=[hash].[ext]"
       },
     ],
   },
@@ -39,7 +39,7 @@ const config = {
     modulesDirectories: ['./bower_components', './node_modules'],
   },
   plugins: [
-    new ExtractTextPlugin('../css/[name].css'),
+    new ExtractTextPlugin('/css/[name].css'),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
@@ -47,12 +47,12 @@ const config = {
     }),
   ],
   devServer: {
-    contentBase: "./dist",
+    contentBase: "dist/",
     hot: true
   },
 };
 
-if (process.env.NODE_ENV === 'production') {
+/* if (process.env.NODE_ENV === 'production') {
   config.plugins.push(
       new webpack.optimize.UglifyJsPlugin({
           compress: { screw_ie8: true },
@@ -60,7 +60,7 @@ if (process.env.NODE_ENV === 'production') {
           output: { comments: false}
       })
   )
-}
+} */
 
 
 export default config;
