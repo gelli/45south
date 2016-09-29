@@ -7,6 +7,11 @@
       "from": "foundation-sites@>=6.2.3 <7.0.0",
       "resolved": "https://registry.npmjs.org/foundation-sites/-/foundation-sites-6.2.3.tgz"
     },
+    "genericons": {
+      "version": "1.0.1",
+      "from": "genericons@latest",
+      "resolved": "https://registry.npmjs.org/genericons/-/genericons-1.0.1.tgz"
+    },
     "jquery": {
       "version": "2.2.4",
       "from": "jquery@>=2.2.0 <3.0.0",
