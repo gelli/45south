@@ -1,11 +1,17 @@
-
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import "settings";
-$slick-dot-size: 10px;
+@import "header";
+
 
 @import "~foundation-sites/scss/foundation";
 
+/*
+
+$slick-dot-size: 10px;
 @import "~slick-carousel/slick/slick";
-@import "~slick-carousel/slick/slick-theme";
+@import "~slick-carousel/slick/slick-theme"; */
+
+@import "~genericons/genericons/genericons";
 
 /* @include foundation-everything(true); */
 
@@ -16,18 +22,7 @@ $slick-dot-size: 10px;
 @include foundation-top-bar;
 @include foundation-title-bar;
 
-header.main-header {
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 80vh;
-  margin-bottom: 5rem;
-  text-align: center;
-  background: #222 no-repeat center center;
-  background-size: cover;
-  background-image: url(images/header.jpg);
-  overflow: hidden;
-}
+@include foundation-typography;
 
 #navigation-bar {
   /* height: 75px; */
@@ -107,6 +102,7 @@ html,body { // for demo only
   }
 }
 
+/*
 .inner {
   position: relative;
   width: 80%;
@@ -119,3 +115,4 @@ html,body { // for demo only
   display: table-cell;
   vertical-align: middle;
 }
+*/
