@@ -11,6 +11,14 @@
   overflow: hidden;
   color: white;
 
+  @media #{$small-only} {
+    height: 40vh;
+  }
+
+  @media #{$medium-only} {
+    height: 60vh;
+  }
+
   .main-header-content {
     display: table-cell;
     vertical-align: middle;
@@ -23,15 +31,14 @@
 }
 
 .page-description {
+  @include hide-for-only(small);
+
   margin-top: 25px;
   font-family: "Rock Salt";
   font-size: 1.2rem;
-
-  @media #{$medium-up} {
-    width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bloglogo {

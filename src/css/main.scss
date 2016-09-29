@@ -1,8 +1,16 @@
 @import "settings";
-@import "header";
 @import "fonts";
 
 @import "~foundation-sites/scss/foundation";
+@include foundation-visibility-classes;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+@include foundation-global-styles;
+@include foundation-top-bar;
+@include foundation-title-bar;
+@include foundation-typography;
+
+@import "header";
 
 /*
 
@@ -14,14 +22,6 @@ $slick-dot-size: 10px;
 
 /* @include foundation-everything(true); */
 
-@include foundation-flex-classes;
-@include foundation-flex-grid;
-
-@include foundation-global-styles;
-@include foundation-top-bar;
-@include foundation-title-bar;
-
-@include foundation-typography;
 
 #navigation-bar {
   /* height: 75px; */
@@ -53,10 +53,11 @@ $slick-dot-size: 10px;
 @import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
 
 html,body { // for demo only
-  background: #FAFAFA;
+  background-color: rgb(238, 238, 238);
 }
 
 .card {
+  background: #fafafa;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
