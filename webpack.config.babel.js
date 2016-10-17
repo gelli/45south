@@ -30,7 +30,7 @@ const config = {
         loader: 'imports?jQuery=jquery,$=jquery,this=>window'
       },
       {
-        test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$|\.eot$/,
+        test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff(2?)$|\.ttf$|\.wav$|\.mp3$|\.eot$/,
         loader: "url-loader?limit=8192&name=[hash].[ext]"
       },
     ],
