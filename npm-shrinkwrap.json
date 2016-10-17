@@ -2,6 +2,11 @@
   "name": "45south",
   "version": "0.0.0",
   "dependencies": {
+    "font-awesome": {
+      "version": "4.6.3",
+      "from": "font-awesome@latest",
+      "resolved": "https://registry.npmjs.org/font-awesome/-/font-awesome-4.6.3.tgz"
+    },
     "foundation-sites": {
       "version": "6.2.3",
       "from": "foundation-sites@>=6.2.3 <7.0.0",
