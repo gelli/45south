@@ -60,7 +60,8 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: rgb(238, 238, 238);
+$body-background: rgb(237, 240, 243);
+
 $body-font-color: $black;
 $body-font-family: 'Open Sans', sans-serif;
 $body-antialiased: true;
@@ -559,7 +560,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $white;
+$topbar-background: none;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

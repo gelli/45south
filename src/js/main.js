@@ -1,7 +1,4 @@
 import $ from 'jquery';
-/*import 'lightslider';
-
-import "lightslider/dist/img/controls.png"; */
 
 import 'slick-carousel';
 
@@ -26,7 +23,7 @@ $(document).ready(function() {
 
 
 
-var last_known_scroll_position = 0;
+/* var last_known_scroll_position = 0;
 var ticking = false;
 
 function doSomething(scroll_pos) {
@@ -49,3 +46,4 @@ window.addEventListener('scroll', function(e) {
   }
   ticking = true;
 });
+*/
